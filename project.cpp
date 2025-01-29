@@ -6,7 +6,7 @@
 double MSE (double a , double b ,double *x, double*y , int size){
         double s= 0 ;
 		double J;
-		for (int i; i<size ; i++){
+		for (int i=0; i<size ; i++){
 			s+= a * x[i] + b - y[i];}
 		J= s / 2*size;
 		return J;
